@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-groq-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: TELEGRAM_BOT_TOKEN
+      - key: GROQ_API_KEY
+        value: GROQ_API_KEY
